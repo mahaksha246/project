@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".EMIActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etLoanAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Loan Amount"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etInterestRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Annual Interest Rate (%)"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etLoanPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Period (Years)"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnCalculateEMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate EMI"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvEMIResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</RelativeLayout>

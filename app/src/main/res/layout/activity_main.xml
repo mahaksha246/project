@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnTDS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TDS Calculator"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnSIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIP Calculator"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnEMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMI Calculator"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnLumpSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lump Sum Calculator"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>
